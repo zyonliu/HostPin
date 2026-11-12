@@ -1,0 +1,10 @@
+# Generated builds and local delivery bundles
+.build/
+dist/
+.swiftpm/
+*.dSYM/
+
+# Local editor / macOS metadata
+.DS_Store
+xcuserdata/
+*.xcuserstate
