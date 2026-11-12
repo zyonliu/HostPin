@@ -140,7 +140,11 @@ swift --version
 ```sh
 git clone https://github.com/zyonliu/HostPin.git
 cd HostPin
+chmod +x Packaging/build-app.sh Packaging/build-local-installer.sh \
+  Packaging/local-installer/preinstall Packaging/local-installer/postinstall
 ```
+
+网页上传的源码未保留脚本执行位，构建前先执行上面的 `chmod`，包括 PKG 的安装钩子；从源码 ZIP 解压后也执行同一步骤。
 
 ### 测试
 
