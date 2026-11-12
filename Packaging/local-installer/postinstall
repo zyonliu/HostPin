@@ -1,0 +1,13 @@
+#!/bin/sh
+set -eu
+
+label=com.hostpin.app.local-writer
+job="system/$label"
+if /bin/launchctl print "$job" >/dev/null 2>&1; then
+    /bin/launchctl bootout "$job"
+fi
+
+# An authorized install must clear a disabled override left by an earlier installation.
+/bin/launchctl enable "$job"
+/bin/launchctl bootstrap system "/Library/LaunchDaemons/$label.plist"
+/bin/launchctl print "$job" >/dev/null
