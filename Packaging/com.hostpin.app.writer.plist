@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>BundleProgram</key>
+	<string>Contents/MacOS/HostPinHelper</string>
+	<key>Label</key>
+	<string>com.hostpin.app.writer</string>
+	<key>MachServices</key>
+	<dict>
+		<key>com.hostpin.app.writer</key>
+		<true/>
+	</dict>
+</dict>
+</plist>
