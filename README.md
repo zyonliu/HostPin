@@ -19,20 +19,14 @@
 
 ## 安装与升级
 
-1. 从 [Releases](https://github.com/zyonliu/HostPin/releases/latest) 下载 `HostPin-1.0.0-Local.pkg` 和 `SHA256SUMS.txt`。
+1. 从 [Releases](https://github.com/zyonliu/HostPin/releases/latest) 下载 `HostPin-1.0.0-Local.pkg`。
 2. 退出正在运行的 HostPin，运行完整 PKG，按 macOS 安装器提示完成管理员授权。
 3. 打开“应用程序”中的 HostPin。助手连接成功后，窗口底部显示“Hosts 写入已启用”。
 4. 此后管理员账户正常打开应用、保存 Hosts、应用优化结果时，无需反复输入密码。安装或升级完整 PKG 时，macOS 仍会请求安装授权。
 
 应用与助手需要成套升级。完整 PKG 会同时安装二者及配套指纹，处理旧服务的停用状态并检查注册结果。
 
-**Local PKG 的签名说明：** 此发布使用本地 ad-hoc 签名和 hardened runtime，尚未使用 Developer ID 签名或经过 Apple 公证。macOS 对下载包的检查可能影响安装体验。请核对下载来源和 SHA-256；需要自行构建时，参见下方构建说明。不要为安装本应用关闭系统整体安全保护。
-
-在下载目录校验安装包：
-
-```sh
-shasum -a 256 -c SHA256SUMS.txt
-```
+**Local PKG 的签名说明：** 此发布使用本地 ad-hoc 签名和 hardened runtime，尚未使用 Developer ID 签名或经过 Apple 公证。macOS 对下载包的检查可能影响安装体验。请核对下载来源；需要自行构建时，参见下方构建说明。不要为安装本应用关闭系统整体安全保护。
 
 ## 功能与操作
 
